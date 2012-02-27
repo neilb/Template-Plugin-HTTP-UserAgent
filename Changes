@@ -1,5 +1,9 @@
 Revision history for perl module Template::Plugin::HTTP::UserAgent
 
+0.03 2012-02-27
+
+    - Oops, forgot to include MANIFEST
+
 0.02 2012-02-27
 
     - Added repository location to pod

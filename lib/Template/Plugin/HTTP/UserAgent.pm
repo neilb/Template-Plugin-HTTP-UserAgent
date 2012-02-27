@@ -3,7 +3,7 @@ package Template::Plugin::HTTP::UserAgent;
 use parent 'Template::Plugin';
 use HTML::ParseBrowser;
 
-our $VERSION = '0.02';
+our $VERSION = '0.03';
 
 sub new
 {
