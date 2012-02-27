@@ -99,6 +99,10 @@ Some of those methods might be added in the future -- let me know if you want on
 Template::Plugin::HTTP::UserAgent might switch to using a different module internally,
 which is why I've started off with a generic set of methods initially.
 
+=head1 REPOSITORY
+
+L<https://github.com/neilbowers/Template-Plugin-HTTP-UserAgent>.
+
 =head1 SEE ALSO
 
 L<Template::Plugin::MobileAgent>

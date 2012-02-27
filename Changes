@@ -1,5 +1,9 @@
 Revision history for perl module Template::Plugin::HTTP::UserAgent
 
+0.02 2012-02-27
+
+    - Added repository location to pod
+
 0.01 2012-02-26
 
     - first version of module
