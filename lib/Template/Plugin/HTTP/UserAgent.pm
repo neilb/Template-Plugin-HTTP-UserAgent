@@ -3,7 +3,7 @@ package Template::Plugin::HTTP::UserAgent;
 use parent 'Template::Plugin';
 use HTML::ParseBrowser;
 
-our $VERSION = '0.01';
+our $VERSION = '0.02';
 
 sub new
 {
@@ -105,7 +105,8 @@ L<https://github.com/neilbowers/Template-Plugin-HTTP-UserAgent>.
 
 =head1 SEE ALSO
 
-L<Template::Plugin::MobileAgent>
+L<Template::Plugin::MobileAgent>,
+L<HTML::ParseBrowser>.
 
 =head1 AUTHOR
 
