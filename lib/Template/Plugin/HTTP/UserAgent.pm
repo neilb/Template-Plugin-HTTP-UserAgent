@@ -3,7 +3,7 @@ package Template::Plugin::HTTP::UserAgent;
 use parent 'Template::Plugin';
 use HTML::ParseBrowser;
 
-our $VERSION = '0.03';
+our $VERSION = '0.04';
 
 sub new
 {
@@ -51,14 +51,16 @@ Template::Plugin::HTTP::UserAgent - Template plugin for parsing HTTP User-Agent 
 
 =head1 DESCRIPTION
 
-Template::Plugin::HTTP::UserAgent is a plugin for the Template toolkit which is used
-to extract information from a HTTP User-Agent string. The User-Agent string comes
-from one of two places. Either you pass the string to the constructor:
+Template::Plugin::HTTP::UserAgent is a plugin for the Template Toolkit
+which is used to extract information from an HTTP User-Agent string.
+The User-Agent string can come from one of two places.
+Either you pass the string to the constructor:
 
   [% USE ua = HTTP::UserAgent('Opera/9.64 (X11; Linux i686; U; da) Presto/2.1.1')
 
-If you don't pass a string, the module will check to see whether the HTTP_USER_AGENT
-environment variable is set, and if so will use that.
+If you don't pass a string to the constructor,
+it will check to see whether the HTTP_USER_AGENT environment variable is set,
+and if so will use that.
 
   [% USE ua = HTTP::UserAgent %]
 
@@ -70,13 +72,15 @@ The module supports the following methods.
 
 =item name
 
-The name of the user agent (e.g. web browser, crawler). In general this is the name that appears
-in the User-Agent string. Internet Explorer identifies itself as 'MSIE', but this method
-returns 'Internet Explorer'.
+The name of the user agent (e.g. web browser, crawler).
+In general this is the name that appears in the User-Agent string.
+Internet Explorer identifies itself as 'MSIE' in the User-Agent string,
+but this method returns 'Internet Explorer'.
 
 =item version
 
-The full version string. For example the User-Agent string containing 'Camino/1.0rc1' will
+The full version string.
+For example the User-Agent string containing 'Camino/1.0rc1' will
 return '1.0rc1' as the version string.
 
 =item major
@@ -93,15 +97,19 @@ The string which identifies the operating system on which the User-Agent is runn
 
 =back
 
-At the moment Template::Plugin::HTTP::UserAgent uses L<HTML::ParseBrowser> internally.
-That module supports more methods for extracting information from User-Agent strings.
-Some of those methods might be added in the future -- let me know if you want one or more of them.
-Template::Plugin::HTTP::UserAgent might switch to using a different module internally,
+At the moment Template::Plugin::HTTP::UserAgent uses
+L<HTML::ParseBrowser> internally.
+That module supports more methods for extracting information
+from User-Agent strings than are provided here.
+Some of those methods might be added in the future --
+let me know if you want one or more of them.
+Template::Plugin::HTTP::UserAgent might switch to using
+a different module internally,
 which is why I've started off with a generic set of methods initially.
 
 =head1 REPOSITORY
 
-L<https://github.com/neilbowers/Template-Plugin-HTTP-UserAgent>.
+L<https://github.com/neilbowers/Template-Plugin-HTTP-UserAgent>
 
 =head1 SEE ALSO
 
@@ -116,5 +124,6 @@ Neil Bowers E<lt>neilb@cpan.orgE<gt>
 
 Copyright 2012 Neil Bowers. All rights reserved.
 
-This module is free software; you can redistribute it and/or modify it under the same terms as Perl itself.
+This module is free software;
+you can redistribute it and/or modify it under the same terms as Perl itself.
 

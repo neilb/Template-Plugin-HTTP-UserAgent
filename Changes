@@ -2,6 +2,7 @@ Revision history for perl module Template::Plugin::HTTP::UserAgent
 
 0.04 2012-02-28
 
+    - Fixed a typo and other tidy-ups of documentation.
     - added 'parent' as a pre-req. Not having it meant that Perl 5.8.9 was
       failing on CPAN testers.
 
