@@ -18,6 +18,7 @@ WriteMakefile(
         'Template::Plugin'   => 0,
         'Template::Test'     => 0,
         'HTML::ParseBrowser' => 1.05,
+        'parent'             => 0,
     },
 );
 
