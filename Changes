@@ -1,8 +1,12 @@
 Revision history for perl module Template::Plugin::HTTP::UserAgent
 
 0.05 2013-10-16
-    - Added use strict and use warnings.
+
+    - Added use strict and use warnings
     - Added "use 5.10.0" to specify min perl version
+    - Added new-style github repo details in Makefile.PL
+    - Corrected the NAME in Makefile.PL
+      (was set to dist, instead of module, name)
 
 0.04 2012-02-28
 
