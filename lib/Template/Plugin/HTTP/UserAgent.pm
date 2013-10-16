@@ -1,5 +1,6 @@
 package Template::Plugin::HTTP::UserAgent;
-
+use strict;
+use warnings;
 use parent 'Template::Plugin';
 use HTML::ParseBrowser;
 
