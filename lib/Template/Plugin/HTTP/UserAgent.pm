@@ -1,10 +1,11 @@
 package Template::Plugin::HTTP::UserAgent;
+use 5.10.0;
 use strict;
 use warnings;
 use parent 'Template::Plugin';
 use HTML::ParseBrowser;
 
-our $VERSION = '0.04';
+our $VERSION = '0.05';
 
 sub new
 {
