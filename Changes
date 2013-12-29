@@ -1,5 +1,9 @@
 Revision history for perl module Template::Plugin::HTTP::UserAgent
 
+0.06 2013-12-29
+    - Set MIN_PERL_VERSION to 5.010 in Makefile.PL
+    - Specified license type as 'perl' in Makefile.PL
+
 0.05 2013-10-16
 
     - Added use strict and use warnings
