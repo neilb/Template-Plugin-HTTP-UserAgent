@@ -1,5 +1,11 @@
 Revision history for perl module Template::Plugin::HTTP::UserAgent
 
+0.07 2014-05-14
+    - Switched to Dist::Zilla
+    - Switched Perl version dependency from 5.10.0 to 5.6.0.
+      I don't seem to have recorded a reason for 5.10.0, and can't
+      see an actual dependency on 5.10.0.
+
 0.06 2013-12-29
     - Set MIN_PERL_VERSION to 5.010 in Makefile.PL
     - Specified license type as 'perl' in Makefile.PL

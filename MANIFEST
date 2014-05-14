@@ -1,7 +1,0 @@
-Changes
-MANIFEST
-Makefile.PL
-README
-lib/Template/Plugin/HTTP/UserAgent.pm
-t/argument.t
-t/environment.t

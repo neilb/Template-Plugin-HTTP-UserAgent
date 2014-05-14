@@ -1,11 +1,12 @@
 package Template::Plugin::HTTP::UserAgent;
-use 5.10.0;
+
+# ABSTRACT: Template plugin for parsing HTTP User-Agent string
+
+use 5.006;
 use strict;
 use warnings;
 use parent 'Template::Plugin';
 use HTML::ParseBrowser;
-
-our $VERSION = '0.06';
 
 sub new
 {
