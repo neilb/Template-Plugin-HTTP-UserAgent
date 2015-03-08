@@ -29,11 +29,12 @@ sub new
     }, $class;
 }
 
-sub name    { return $_[0]->{UA}->name;  }
-sub version { return $_[0]->{UA}->v;     }
-sub major   { return $_[0]->{UA}->major; }
-sub minor   { return $_[0]->{UA}->minor; }
-sub os      { return $_[0]->{UA}->os;    }
+sub name      { return $_[0]->{UA}->name;       }
+sub version   { return $_[0]->{UA}->v;          }
+sub major     { return $_[0]->{UA}->major;      }
+sub minor     { return $_[0]->{UA}->minor;      }
+sub os        { return $_[0]->{UA}->os;         }
+sub ua_string { return $_[0]->{UA}->user_agent; }
 
 1;
 
@@ -99,6 +100,10 @@ The minor version number. For Iron 6.0.475.1, this method will return 0.
 =item os
 
 The string which identifies the operating system on which the User-Agent is running.
+
+=item ua_string
+
+The raw User-Agent string.
 
 =back
 

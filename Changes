@@ -1,5 +1,8 @@
 Revision history for perl module Template::Plugin::HTTP::UserAgent
 
+0.08 2015-03-08
+    - Added a ua_string method, for getting the raw user agent string.
+
 0.07 2014-05-14
     - Switched to Dist::Zilla
     - Switched Perl version dependency from 5.10.0 to 5.6.0.
